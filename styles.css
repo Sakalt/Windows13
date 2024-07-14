@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#desktop {
+    background-color: #0078d4;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+#sidebar {
+    background-color: #333;
+    width: 250px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar-item {
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+    background-color: #444;
+}
+
+#taskbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#start-button {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.window {
+    background-color: #ffffff;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title-bar {
+    background-color: #0078d4;
+    color: #ffffff;
+    padding: 5px;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    padding: 10px;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+.market-item {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.market-item:hover {
+    background-color: #ddd;
+}

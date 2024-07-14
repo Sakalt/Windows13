@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 13</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="desktop">
+        <div id="sidebar">
+            <div class="sidebar-item" data-app="photo">Photo</div>
+            <div class="sidebar-item" data-app="timer">Timer</div>
+            <div class="sidebar-item" data-app="clock">Clock</div>
+            <div class="sidebar-item" data-app="lock">Lock</div>
+            <div class="sidebar-item" data-app="settings">Settings</div>
+            <div class="sidebar-item" data-app="camera">Camera</div>
+            <div class="sidebar-item" data-app="paint">Paint</div>
+            <div class="sidebar-item" data-app="browser">Browser</div>
+            <div class="sidebar-item" data-app="notepad">Notepad</div>
+            <div class="sidebar-item" data-app="market">Market</div>
+        </div>
+        <div id="taskbar">
+            <div id="start-button">Start</div>
+        </div>
+        
+        <!-- Applications -->
+        <div class="window" id="window-photo" data-app="photo">
+            <div class="title-bar">
+                <span class="title">Photo</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Photo Application</h2>
+                <p>Display and manage your photos here.</p>
+            </div>
+        </div>
+        <div class="window" id="window-timer" data-app="timer">
+            <div class="title-bar">
+                <span class="title">Timer</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Timer Application</h2>
+                <p>Set and manage your timers.</p>
+                <button>Start Timer</button>
+            </div>
+        </div>
+        <div class="window" id="window-clock" data-app="clock">
+            <div class="title-bar">
+                <span class="title">Clock</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Clock Application</h2>
+                <p>Current time: <span id="clock-time"></span></p>
+            </div>
+        </div>
+        <div class="window" id="window-lock" data-app="lock">
+            <div class="title-bar">
+                <span class="title">Lock</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Lock Screen</h2>
+                <p>This screen is locked. Enter your password to unlock.</p>
+                <input type="password" placeholder="Password">
+                <button>Unlock</button>
+            </div>
+        </div>
+        <div class="window" id="window-settings" data-app="settings">
+            <div class="title-bar">
+                <span class="title">Settings</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Settings</h2>
+                <p>Configure your system settings here.</p>
+                <button>Change Background</button>
+            </div>
+        </div>
+        <div class="window" id="window-camera" data-app="camera">
+            <div class="title-bar">
+                <span class="title">Camera</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Camera Application</h2>
+                <p>Use your camera to take pictures and videos.</p>
+                <button>Take Photo</button>
+            </div>
+        </div>
+        <div class="window" id="window-paint" data-app="paint">
+            <div class="title-bar">
+                <span class="title">Paint</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Paint Application</h2>
+                <p>Draw and paint here.</p>
+                <canvas id="paint-canvas" width="200" height="200" style="border:1px solid #000;"></canvas>
+            </div>
+        </div>
+        <div class="window" id="window-browser" data-app="browser">
+            <div class="title-bar">
+                <span class="title">Browser</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Browser Application</h2>
+                <input type="text" id="browser-url" placeholder="Enter URL">
+                <button>Go</button>
+                <div id="browser-content">Web content will be displayed here.</div>
+            </div>
+        </div>
+        <div class="window" id="window-notepad" data-app="notepad">
+            <div class="title-bar">
+                <span class="title">Notepad</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Notepad Application</h2>
+                <textarea id="notepad-content" rows="10" cols="30">Type your notes here...</textarea>
+            </div>
+        </div>
+        <div class="window" id="window-market" data-app="market">
+            <div class="title-bar">
+                <span class="title">Market</span>
+                <span class="close-button">X</span>
+            </div>
+            <div class="content">
+                <h2>Extension Market</h2>
+                <div class="market-item" data-app="new-app">New App</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
